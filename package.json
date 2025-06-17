@@ -1,0 +1,41 @@
+{
+  "name": "secureauth",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "author": "Brill",
+  "license": "MIT",
+  "scripts": {
+  "dev": "concurrently \"npm run --prefix auth-api client\" \"nodemon server.js\"",
+  "build": "npm run --prefix auth-api build"
+}
+
+,
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-jwt": "^8.5.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.16.0",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@vitejs/plugin-react": "^4.5.2",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.10",
+    "vite": "^6.3.5"
+  }
+}
